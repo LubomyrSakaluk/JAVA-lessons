@@ -1,0 +1,142 @@
+
+public class luk {
+	public static void main(String[] args) {
+		double a,b,c;
+		double x1, x2;
+		a = 2;
+		b = 6;
+		c = 8;
+		double Discrimenant = b*b - 4 * a * c;
+		if (Discrimenant == 0) {
+			x1 = (-b )/(2 * a);
+			System.out.printf ("x1 = x2 = %s", x1);
+			}
+		else if (Discrimenant > 0) {
+			x1 = (-b + Math.sqrt(Discrimenant))/(2 * a);
+		    x2 = (-b - Math.sqrt(Discrimenant))/(2 * a);
+		    System.out.printf ("x1 = %s, x2 = %s", x1, x2);
+		}
+		else
+		{
+			System.out.println ("немає рішення дискримінант < 0");
+		}
+		
+		
+		
+	
+		}
+}
+
+package number;
+
+public class number {
+
+	public static void main(String[] args) {
+		
+		int chyslo = 1;
+		
+		while (chyslo<=55)
+		{
+			
+		System.out.println(chyslo);
+		chyslo+=2;
+		}
+
+	}
+
+}
+
+package number2;
+
+public class numberr {
+public static void main(String[] args) {
+		
+		int chyslo = 90;
+		
+		while (chyslo>=0)
+		{
+			
+		System.out.println(chyslo);
+		chyslo-=5;
+		}
+
+	}
+
+}
+
+
+public class DAY {
+
+	public static void main(String[] args) {
+		String dayofWeek = "Friday";
+		
+		switch(dayofWeek) {
+		case "Monday":
+			System.out.println("lesson day");
+		break;
+		
+		case "Tusday":
+			System.out.println("job");
+		break;
+		
+		case "Wednesday":
+			System.out.println("lesson day2");
+		break;
+		
+		case "Thursday":
+			System.out.println("job");
+		break;
+		
+		case "Friday":
+			System.out.println("lesson day3");
+		break;
+		
+		case "Saturday":
+			System.out.println("Weekend");
+		break;
+			
+		
+		case "Sunday":
+			System.out.println("Weekend");
+		break; 
+		
+		default :  
+			System.out.println ("not plan") ;
+			break;
+		}
+		}
+
+}
+
+
+public class Masyv {
+
+	public static void main(String[] args) {
+		
+		int[] chysla = {7, 9, 15, 13, 18};
+		
+		int maxVal = chysla[0];
+		int minVal = chysla[0];
+		for (int i = 0; i < chysla.length; i++ ) {
+			
+			if (maxVal < chysla[i]) {
+				maxVal = chysla[i];
+			}
+			if (minVal > chysla[i]) {
+				minVal = chysla[i];
+			}
+			
+		}
+		System.out.println("Max: "+maxVal);
+		System.out.println("Min: "+minVal);
+	}
+
+}
+
+
+
+
+
+
+
+
